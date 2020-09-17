@@ -9,15 +9,8 @@
 </head>
 <body>
     <div id="app">
-        
-        <form v-on:submit.prevent="submit">
-            <!-- <input type="text" :value="text " @keyup="updateText"><br>
-             -->
-             <input type="text" v-model="text"><br>
-            {{ text }}<br>
-            <button type="submit">Submit</button>
-        </form>
-
+        <button @click="changeMessage">Click</button>
+        {{ reversedMessage }}
     </div>
 <script src="../js/index.js"></script>
 

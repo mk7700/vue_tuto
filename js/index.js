@@ -1,22 +1,17 @@
 new Vue({
     el: '#app',
     data: {
-        year: 2020,
-        text: 'text'
+        message: 'Hello'
     },
     methods: {
-        plus(){
-            this.year++;
-        },
-        minus() {
-            this.year--;
-        },
-        submit() {
-            alert('what');
-            console.log('hello');
-        },
-        // updateText(event) {
-        //     this.text = event.target.value;
-        // }
-       }        
+        changeMessage() {
+            this.message= 'coding';
+        }
+        
+    },
+    computed: {
+        reversedMessage() {
+            return this.message.split('').reverse().join('');
+        }
+    }
 });
