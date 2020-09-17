@@ -1,7 +1,8 @@
 new Vue({
     el: '#app',
     data: {
-        year: 2020 
+        year: 2020,
+        text: 'text'
     },
     methods: {
         plus(){
@@ -13,6 +14,9 @@ new Vue({
         submit() {
             alert('what');
             console.log('hello');
-        }
+        },
+        // updateText(event) {
+        //     this.text = event.target.value;
+        // }
        }        
 });

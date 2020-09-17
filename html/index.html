@@ -9,9 +9,12 @@
 </head>
 <body>
     <div id="app">
-        {{ year }}<br>
+        
         <form v-on:submit.prevent="submit">
-            <input type="text"><br>
+            <!-- <input type="text" :value="text " @keyup="updateText"><br>
+             -->
+             <input type="text" v-model="text"><br>
+            {{ text }}<br>
             <button type="submit">Submit</button>
         </form>
 
