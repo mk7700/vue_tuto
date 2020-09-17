@@ -9,9 +9,12 @@
 </head>
 <body>
     <div id="app">
-        {{ nextYear('hello') }}
-        <input :type="type" :value = "inputData">
-        <a :href="getYouTubeLink('youtubekorea')">Youtube</a>
+        {{ year }}<br>
+        <form v-on:submit.prevent="submit">
+            <input type="text"><br>
+            <button type="submit">Submit</button>
+        </form>
+
     </div>
 <script src="../js/index.js"></script>
 

@@ -1,23 +1,18 @@
 new Vue({
     el: '#app',
     data: {
-        person: {
-            name: 'vue_tuto',
-            age: 27
-        },
-        inputData: 'hello',
-        type: 'text',
-        Link: 'https://www.youtube.com/'        
+        year: 2020 
     },
     methods: {
-        getYouTubeLink(channel) {
-            return this.Link + channel;
+        plus(){
+            this.year++;
         },
-        nextYear(greeting) {
-            return greeting + '! ' + this.person.name + '는 내년에' + (this.person.age + 1) + '살 이됩니다.';
+        minus() {
+            this.year--;
         },
-        otherMethod: function() {
-            this.nextYear();
+        submit() {
+            alert('what');
+            console.log('hello');
         }
-    }
+       }        
 });
